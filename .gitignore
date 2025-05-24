@@ -67,4 +67,4 @@ htmlcov/
 *.tmp
 *.orig
 
-serverid.json/
+serverid.json
