@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.env/
+
+# VSCode settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+
+# Token & Secrets
+.env
+*.env
+
+# Python egg info
+*.egg-info/
+*.egg
+
+# dist / build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# pip cache
+pip-log.txt
+pip-delete-this-directory.txt
+
+# MyPy, coverage, pytest
+.mypy_cache/
+.coverage
+htmlcov/
+.cache/
+.pytest_cache/
+
+# System files
+*.swp
+*.bak
+*.tmp
+*.orig
+
+serverid.json/
