@@ -3,8 +3,7 @@ import discord
 from utils import ServerFunctionality
 import json
 
-with open(os.path.join(os.path.dirname(__file__), "serverid.json"), "r") as f:
-    serverMap = json.load(f)
+serverMap = json.loads(os.getenv("SERVER_MAP"))
 
 class Commands:
     async def info(bot):
