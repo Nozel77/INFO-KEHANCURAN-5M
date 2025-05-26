@@ -8,7 +8,7 @@ class ServerFunctionality:
         result = await GetFivemServerInfo(joinId, keyword)
 
         if "error" in result:
-            await ctx.send("❌ Server sedang down atau sedang maintenance mohon coba lagi nanti.")
+            await ctx.send(f"❌ Gagal mengambil data server: {result['error']}")
             return
 
         embed = discord.Embed(
