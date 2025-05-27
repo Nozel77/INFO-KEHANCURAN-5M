@@ -18,8 +18,8 @@ async def on_ready():
     print(f"✅ Bot {bot.user} siap digunakan.")
 
 async def main():
-    await Commands.info(bot)
-    await Commands.listkota(bot)
+    Commands.info(bot)
+    Commands.listkota(bot)
     await bot.start(os.getenv("DISCORD_BOT_TOKEN"))
 
 if __name__ == "__main__":

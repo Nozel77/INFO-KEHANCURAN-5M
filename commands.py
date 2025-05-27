@@ -6,7 +6,7 @@ import json
 serverMap = json.loads(os.getenv("SERVER_MAP"))
 
 class Commands:
-    async def info(bot):
+    def info(bot):
         @bot.command(name="info")
         async def InfoCommand(ctx, serverName: str, *, filterKeyword: str = ""):
             joinId = serverMap.get(serverName.lower())
@@ -16,7 +16,7 @@ class Commands:
 
             await ServerFunctionality.SendServerInfo(ctx, joinId, filterKeyword)
             
-    async def listkota(bot):
+    def listkota(bot):
         @bot.command(name="listkota")
         async def ListKotaCommand(ctx):
             if not serverMap:
